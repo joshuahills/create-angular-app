@@ -29,10 +29,10 @@ jobs:
       run: npm ci
     - name: create-angular-app - npm run build
       run: npm run build
-    - name: angular-v15-template - npm ci
+    - name: angular-v15-template - npm install
       run: |
         cd templates/angular-v15-template
-        npm ci
+        npm install
     - name: angular-v15-template - npm run build
       run: |
         cd templates/angular-v15-template
