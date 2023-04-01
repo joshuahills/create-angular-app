@@ -17,7 +17,6 @@ jobs:
     strategy:
       matrix:
         node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v3
@@ -26,5 +25,15 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
+    - name: create-angular-app - npm ci
+      run: npm ci
+    - name: create-angular-app - npm run build
+      run: npm run build
+    - name: angular-v15-template - npm ci
+      run: |
+        cd templates/angular-v15-template
+        npm ci
+    - name: angular-v15-template - npm run build
+      run: |
+        cd templates/angular-v15-template
+        npm run build
