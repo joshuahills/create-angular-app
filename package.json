@@ -1,10 +1,11 @@
 {
   "name": "@chimpbyte/create-angular-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A utility to easily create an Angular application with a set recommended tools.",
   "main": "index.js",
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "templates/**/*"
   ],
   "private": false,
   "type": "module",
