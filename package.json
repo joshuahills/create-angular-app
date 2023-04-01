@@ -4,6 +4,7 @@
   "description": "A utility to easily create an Angular application with a set of optional tools.",
   "main": "index.js",
   "files": ["lib/**/*"],
+  "private": false,
   "scripts": {
     "build": "tsc"
   },
