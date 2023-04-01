@@ -8,6 +8,7 @@
   "scripts": {
     "build": "tsc"
   },
+  "bin": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joshuahills/create-angular-app.git"
