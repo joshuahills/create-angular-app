@@ -23,3 +23,6 @@ npm create @chimpbyte/angular-app
 ```
 
 You'll be asked to choose a template and a variant of the template. This is for future use, only one template and variant are currently supported.
+
+## Credits
+Brandon Roberts for his [create-angular-project package](https://www.npmjs.com/package/create-angular-project) which I used as a starting point.
