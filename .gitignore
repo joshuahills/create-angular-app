@@ -1,2 +1,11 @@
+# node_modules folders
 node_modules
+
+# .angular folders
+.angular
+
+# dist folders
+dist
+
+# compiled js from create-angular-app
 /lib
