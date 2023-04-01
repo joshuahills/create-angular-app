@@ -4,7 +4,8 @@
   "description": "A utility to easily create an Angular application with a set recommended tools.",
   "main": "index.js",
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "templates/**/*"
   ],
   "private": false,
   "type": "module",
