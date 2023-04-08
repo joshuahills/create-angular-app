@@ -182,6 +182,7 @@ async function init () {
     files: [
       path.join(targetDir, 'src/app/app.component.ts'),
       path.join(targetDir, 'angular.json'),
+      path.join(targetDir, 'src/index.html'),
     ],
     from: /angular-v15-template/g,
     to: pkg.name,
