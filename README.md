@@ -22,4 +22,4 @@ Run the following command and follow the prompts:
 npm create @chimpbyte/angular-app
 ```
 
-You'll be asked to choose a template and a variant of the template. You can choose from Angular 15 or 16 currently.
+You'll be asked to choose a template and a variant of the template. You can choose from Angular 15 or 16 currently, each having only one variant. More variants may be added in the future.
