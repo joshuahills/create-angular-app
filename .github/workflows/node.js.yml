@@ -37,3 +37,11 @@ jobs:
       run: |
         cd templates/angular-v15-template
         npm run build
+    - name: angular-v16-template - npm install
+      run: |
+        cd templates/angular-v16-template
+        npm install
+    - name: angular-v16-template - npm run build
+      run: |
+        cd templates/angular-v16-template
+        npm run build

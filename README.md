@@ -4,7 +4,7 @@
 
 # create-angular-app
 
-A utility to easily create an Angular v15 application with a set of recommended tools.
+A utility to easily create an Angular application with a set of recommended tools.
 
 ## Why?
 
@@ -26,10 +26,9 @@ Run the following command and follow the prompts:
 npm create @chimpbyte/angular-app
 ```
 
-You'll be asked to choose a template and a variant of the template. This is for future use, only one template and variant are currently supported.
+You'll be asked to choose a template and a variant of the template. You can choose from Angular 15 or 16 currently, each having only one variant. More variants may be added in the future.
 
 ## Credits
 Brandon Roberts for his [create-angular-project package](https://www.npmjs.com/package/create-angular-project) which I used as a starting point.
 
 [![view on npm](https://img.shields.io/badge/view_on_npm-red?style=for-the-badge&logo=npm&logoColor=white)](https://bit.ly/create-angular-app)
-
