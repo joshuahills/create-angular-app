@@ -3,7 +3,7 @@
 import * as child_process from 'child_process';
 import { Spinner } from 'cli-spinner';
 import * as fs from 'fs';
-import { gray, red, reset, yellow } from 'kolorist';
+import { gray, green, red, reset, yellow } from 'kolorist';
 import { fileURLToPath } from 'node:url';
 import * as path from 'path';
 import prompts from 'prompts';
@@ -30,6 +30,16 @@ const APPS = [
       {
         name: 'angular-v15',
         color: yellow,
+      },
+    ],
+  },
+  {
+    name: 'Angular V16',
+    color: green,
+    variants: [
+      {
+        name: 'angular-v16',
+        color: green,
       },
     ],
   },
