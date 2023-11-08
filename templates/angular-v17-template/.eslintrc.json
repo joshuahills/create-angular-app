@@ -1,0 +1,113 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "@typescript-eslint/quotes": [
+          "error",
+          "single",
+          {
+            "allowTemplateLiterals": true
+          }
+        ],
+        "@typescript-eslint/type-annotation-spacing": "error",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "keyword-spacing": "off",
+        "@typescript-eslint/keyword-spacing": ["error"],
+        "@typescript-eslint/comma-dangle": [
+          "error",
+          "always-multiline"
+        ],
+        "semi": [
+          "error",
+          "always"
+        ],
+        "arrow-body-style": "off",
+        "brace-style": [
+          "error",
+          "1tbs"
+        ],
+        "curly": "error",
+        "eol-last": "error",
+        "id-denylist": "off",
+        "indent": [
+          "error",
+          2,
+          {
+            "SwitchCase": 1
+          }
+        ],
+        "radix": [
+          "error",
+          "as-needed"
+        ],
+        "max-len": [
+          "error",
+          {
+            "code": 140
+          }
+        ],
+        "object-curly-spacing": [
+          "error",
+          "always"
+        ],
+        "no-trailing-spaces": "error",
+        "no-console": [
+          "error",
+          {
+            "allow": [
+              "warn",
+              "error"
+            ]
+          }
+        ],
+        "spaced-comment": [
+          "error",
+          "always",
+          {
+            "markers": [
+                "/"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    }
+  ]
+}
