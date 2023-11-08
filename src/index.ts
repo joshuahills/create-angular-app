@@ -43,6 +43,16 @@ const APPS = [
       },
     ],
   },
+  {
+    name: 'Angular V17',
+    color: red,
+    variants: [
+      {
+        name: 'angular-v17',
+        color: red,
+      },
+    ],
+  },
 ];
 
 const TEMPLATES = APPS.map(
