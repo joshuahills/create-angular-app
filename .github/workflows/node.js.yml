@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -44,4 +44,12 @@ jobs:
     - name: angular-v16-template - npm run build
       run: |
         cd templates/angular-v16-template
+        npm run build
+    - name: angular-v17-template - npm install
+      run: |
+        cd templates/angular-v17-template
+        npm install
+    - name: angular-v17-template - npm run build
+      run: |
+        cd templates/angular-v17-template
         npm run build

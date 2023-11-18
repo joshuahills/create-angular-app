@@ -43,6 +43,16 @@ const APPS = [
       },
     ],
   },
+  {
+    name: 'Angular V17 (standalone)',
+    color: red,
+    variants: [
+      {
+        name: 'angular-v17',
+        color: red,
+      },
+    ],
+  },
 ];
 
 const TEMPLATES = APPS.map(
@@ -188,18 +198,15 @@ async function init () {
 
   write('package.json', JSON.stringify(pkg, null, 2));
 
-  const replaceResult = replace.sync({
+  replace.sync({
     files: [
       path.join(targetDir, 'src/app/app.component.ts'),
       path.join(targetDir, 'angular.json'),
       path.join(targetDir, 'src/index.html'),
     ],
-    from: /angular-v15-template/g,
+    from:/angular-v(\d+)-template/g,
     to: pkg.name,
-    countMatches: true,
   });
-
-  console.log(gray(`Replaced ${replaceResult.reduce((a, b) => a + (b.numMatches ?? 0), 0)} template name occurrences with "${pkg.name}"`));
 
   const spinner = new Spinner('Installing dependencies...').start();
 
